@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Site • Teste</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Meu Site</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Deploy OK 🎉</h2>
+        <p>Se você está vendo esta página, seu GitHub Pages está funcionando.</p>
+        <a class="btn" href="#sobre">Ver mais</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container grid-2">
+        <div>
+          <h3>Sobre</h3>
+          <p>
+            Este é um template mínimo em HTML + CSS para teste rápido.
+            Edite <code>index.html</code> e <code>styles.css</code> e faça commit.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Status</h4>
+          <ul>
+            <li>Build: <strong>ok</strong></li>
+            <li>Domínio: <strong>configurado</strong></li>
+            <li>HTTPS: <strong>ativado</strong> (pode demorar alguns minutos)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section muted">
+      <div class="container">
+        <h3>Contato</h3>
+        <p>Envie um alô: <a href="mailto:voce@seudominio.com">voce@seudominio.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Seu Nome</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
